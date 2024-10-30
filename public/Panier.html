@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier d'achat</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/2aeb1c8d9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="listeProduits.html">Liste des produits</a></li>
+                    <li><a href="Panier.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><i class="fas fa-solid fa-square-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+    <main>
+        <div id="cart"></div>
+    <button id="commanderButton">Commander</button>
+    </main>
+    <script src="panier.js"></script>
+</body>
+</html>

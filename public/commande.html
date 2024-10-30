@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande</title>
+     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/2aeb1c8d9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.png" class="logo" alt="logo">
+        <ul id="sidemenu">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="listeProduits.html">Liste des produits</a></li>
+            <li><a href="Panier.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><i class="fas fa-solid fa-square-xmark" onclick="closemenu()"></i></li>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <form id="orderForm">
+        <h2>Info de Commande</h2>
+        <label for="nom">Nom:</label><br>
+        <input type="text" id="nom" name="nom" required><br>
+        <label for="adresse">Adresse:</label><br>
+        <input type="text" id="adresse" name="adresse" required><br>
+        <label for="contact">Contact:</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <div id="validation"></div>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Liste des produits</a></li>
+                    <li><a href="">Détails du produit</a></li>
+                    <li><a href="">Panier d'achat</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer> 
+    <script src="commande.js"></script>
+</body>
+</html>
