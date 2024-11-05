@@ -66,6 +66,34 @@ nav ul li a{
     justify-content: center; 
 }
 
+#cart div {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 15px; 
+    padding: 10px;
+    background-color: #56aeff; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+#cart img {
+    width: 60px; 
+    height: 60px; 
+    object-fit: cover; 
+    margin-right: 10px; 
+}
+
+
+#cart span {
+    flex-grow: 1; 
+}
+
+
+#cart i {
+    color: #ff4d4d; 
+    font-size: 18px; 
+}
+
 .card {
     background-color: #56aeff;
     border-radius: 8px;
@@ -442,6 +470,28 @@ button.buy:active{
 #commanderButton{
     width: 100px;
 }
+#cart {
+    padding: 15px; 
+}
+
+#cart div {
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+#cart img {
+    width: 50px; 
+    height: 50px; 
+}
+
+#cart span {
+    margin-bottom: 5px; 
+}
+
+#cart i {
+    align-self: flex-end; 
+}
+}
 
 /* commander page */
 #orderForm {
@@ -451,7 +501,7 @@ button.buy:active{
 #validation{
     max-width: 250px;       
 }
-}
+
 
 
 
