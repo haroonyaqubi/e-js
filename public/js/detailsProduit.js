@@ -8,7 +8,7 @@ function getProductFromUrl() {
 function displayProductDetails() {
     const productName = getProductFromUrl();
 
-    fetch('produits.json')
+    fetch('./produits.json')
         .then(response => response.json())
         .then(data => {
              

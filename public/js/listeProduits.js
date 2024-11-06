@@ -24,7 +24,7 @@ function displayProducts (productsToDisplay){
 }
 
 // Fetch products from JSON file
-fetch('produits.json')
+fetch('./produits.json')
     .then(response => response.json()) 
     .then(data => displayProducts(data)) 
 

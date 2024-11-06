@@ -17,7 +17,7 @@
     }
 
      // Fetch products from the JSON file and display featured products
-     fetch('produits.json')
+     fetch('./produits.json')
      .then(response => response.json())
      .then(data => {
          const featuredProducts = data.slice(0, 3); 
